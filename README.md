@@ -1,10 +1,10 @@
-# 🏥 Sistema de Clustering para Segmentación de Pacientes - Cáncer de Mama
+# Sistema de Clustering para Segmentación de Pacientes - Cáncer de Mama
 
-## 📋 Descripción
+## Descripción
 
 Aplicación web interactiva desarrollada con **Streamlit** y **Docker** que implementa técnicas de **Machine Learning No Supervisado** para la segmentación automática de pacientes con cáncer de mama. Utiliza el dataset Wisconsin Diagnostic Breast Cancer para agrupar pacientes en clusters homogéneos mediante algoritmos interpretables de "caja blanca".
 
-## ✨ Características Principales
+## Características Principales
 
 - **🤖 Algoritmos de Clustering:** K-Means y Clustering Jerárquico Aglomerativo
 - **📊 Optimización Automática:** Grid Search con métricas Silhouette Score y Davies-Bouldin Index
@@ -13,7 +13,7 @@ Aplicación web interactiva desarrollada con **Streamlit** y **Docker** que impl
 - **🐳 Dockerizado:** Ejecución con un solo comando (`docker-compose up`)
 - **🔧 Preprocesamiento:** Normalización de datos con StandardScaler
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - Python 3.10
 - Streamlit
@@ -36,21 +36,21 @@ docker-compose up --build
 http://localhost:8501
 ```
 
-## 📊 Dataset
+## Dataset
 
 **Wisconsin Diagnostic Breast Cancer Dataset**
 - 569 pacientes
 - 30 características médicas
 - Fuente: UCI Machine Learning Repository / Scikit-learn
 
-## 🎯 Casos de Uso
+## Casos de Uso
 
 - Segmentación de pacientes para tratamientos personalizados
 - Identificación de grupos de riesgo
 - Análisis exploratorio de patrones clínicos
 - Investigación médica y oncológica
 
-## 📝 Licencia
+## Licencia
 
 MIT License
 
