@@ -239,7 +239,12 @@ if run_analysis:
     top_features = list(feature_names[:10])
     cluster_profiles = df_analysis.groupby('Cluster')[top_features].mean()
     
-    st.dataframe(cluster_profiles.style.background_gradient(cmap='RdYlGn', axis=1), use_container_width=True)
+    # Mostrar tabla con formato condicional
+    try:
+        st.dataframe(cluster_profiles.style.background_gradient(cmap='RdYlGn', axis=1), use_container_width=True)
+    except:
+        # Fallback sin estilo si hay problemas
+        st.dataframe(cluster_profiles, use_container_width=True)
     
     st.success("✅ Análisis completado exitosamente!")
 
